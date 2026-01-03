@@ -21,4 +21,11 @@ export const LINKS = [
     category: "Dev",
     icon: "💻",
   },
+  {
+  id: "telegram",
+  label: "Telegram",
+  url: "https://t.me/eurodrigoamorim?text=Olá%20Rodrigo!%20Vim%20pelo%20seu%20LinkHub%20🙂",
+  icon: "✈️",
+}
+
  ];
