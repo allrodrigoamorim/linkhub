@@ -3,7 +3,7 @@ export const LINKS = [
   {
     id: "instagram",
     label: "Instagram",
-    url: "https://instagram.com/",
+    url: "https://instagram.com/eu.rodrigoamorim",
     category: "Redes",
     icon: "📷",
   },
@@ -17,7 +17,7 @@ export const LINKS = [
   {
     id: "github",
     label: "GitHub",
-    url: "https://github.com/",
+    url: "https://github.com/allrodrigoamorim",
     category: "Dev",
     icon: "💻",
   },

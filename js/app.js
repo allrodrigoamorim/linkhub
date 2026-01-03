@@ -1,5 +1,3 @@
-// js/app.js
-
 export function loadFromStorage(key, fallback) {
   try {
     const data = localStorage.getItem(key);
@@ -15,7 +13,7 @@ export function saveToStorage(key, value) {
 
 export function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
-  saveToStorage("theme", theme);
+  localStorage.setItem("theme", theme);
 }
 
 export function getTheme() {
@@ -24,5 +22,6 @@ export function getTheme() {
 
 export function toggleTheme() {
   const current = getTheme();
-  setTheme(current === "light" ? "dark" : "light");
+  const next = current === "light" ? "dark" : "light";
+  setTheme(next);
 }
