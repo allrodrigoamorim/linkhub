@@ -10,7 +10,7 @@ export const LINKS = [
   {
     id: "youtube",
     label: "YouTube",
-    url: "https://youtube.com/",
+    url: "https://www.youtube.com/@eurodrigoamorim",
     category: "Conteúdo",
     icon: "🎥",
   },
@@ -21,11 +21,4 @@ export const LINKS = [
     category: "Dev",
     icon: "💻",
   },
-  {
-    id: "whatsapp",
-    label: "WhatsApp",
-    url: "https://wa.me/5500000000000",
-    category: "Contato",
-    icon: "💬",
-  },
-];
+ ];
