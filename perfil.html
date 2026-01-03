@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkHub — Perfil</title>
+    <meta
+      name="description"
+      content="Perfil no LinkHub com informações, links principais e conteúdo incorporado."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="./index.html" class="nav__logo">LinkHub</a>
+
+        <ul class="nav__list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./perfil.html" aria-current="page">Perfil</a></li>
+          <li><a href="./stats.html">Stats</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+
+        <button id="themeToggle" class="btn btn--small" type="button">
+          Alternar tema
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>Perfil</h1>
+        <p class="muted">
+          Um resumo sobre o perfil e recursos úteis.
+        </p>
+      </header>
+
+      <section class="card">
+        <article class="profile">
+          <img
+            src="./assets/img/avatar.jpg"
+            alt="Foto do perfil"
+            class="profile-card__avatar"
+          />
+
+          <div class="profile__content">
+            <h2>Rodrigo Amorim</h2>
+            <p>
+              Este é um exemplo de perfil no LinkHub: um lugar único para organizar links,
+              compartilhar recursos e acompanhar estatísticas.
+            </p>
+
+            <ul class="list">
+              <li><strong>Foco:</strong> organização e produtividade</li>
+              <li><strong>Objetivo:</strong> centralizar links e rastrear acessos</li>
+              <li><strong>Stack:</strong> HTML, CSS e JavaScript</li>
+            </ul>
+
+            <p>
+              Link externo recomendado:
+              <a
+                href="https://developer.mozilla.org/pt-BR/docs/Web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MDN Web Docs
+              </a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="card" aria-label="Conteúdo incorporado por iframe">
+        <h2>Vídeo (Iframe)</h2>
+        <p class="muted">Exemplo de incorporação de conteúdo externo.</p>
+
+        <div class="iframe-wrap">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5MgBikgcWnY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Áudio incorporado">
+        <h2>Áudio</h2>
+        <p class="muted">Você pode usar áudio como trilha de foco (opcional).</p>
+
+        <audio controls>
+          <source src="./assets/audio/click.mp3" type="audio/mpeg" />
+          Seu navegador não suporta áudio.
+        </audio>
+      </section>
+
+      <section class="card" aria-label="Galeria de imagens">
+        <h2>Galeria</h2>
+        <p class="muted">Exemplo de imagens organizadas em grid.</p>
+
+        <div class="gallery">
+          <img src="./assets/img/avatar.jpg" alt="Imagem exemplo 1" />
+          <img src="./assets/img/avatar.jpg" alt="Imagem exemplo 2" />
+          <img src="./assets/img/avatar.jpg" alt="Imagem exemplo 3" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 — LinkHub</p>
+    </footer>
+
+    <script type="module" src="./js/perfil.js"></script>
+  </body>
+</html>

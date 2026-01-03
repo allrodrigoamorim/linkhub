@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkHub — Contato</title>
+    <meta
+      name="description"
+      content="Entre em contato com o perfil LinkHub. Envie uma mensagem com seu nome, e-mail e assunto."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="./index.html" class="nav__logo">LinkHub</a>
+
+        <ul class="nav__list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./perfil.html">Perfil</a></li>
+          <li><a href="./stats.html">Stats</a></li>
+          <li><a href="./contato.html" aria-current="page">Contato</a></li>
+        </ul>
+
+        <button id="themeToggle" class="btn btn--small" type="button">
+          Alternar tema
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>Contato</h1>
+        <p class="muted">
+          Envie uma mensagem. (Simulação: este formulário não envia para servidor.)
+        </p>
+      </header>
+
+      <section class="card" aria-label="Formulário de contato">
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name" class="label">Nome</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              class="input"
+              autocomplete="name"
+              required
+              minlength="2"
+              placeholder="Seu nome"
+            />
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="email" class="label">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="input"
+              autocomplete="email"
+              required
+              placeholder="seuemail@exemplo.com"
+            />
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="subject" class="label">Assunto</label>
+            <select id="subject" name="subject" class="input input--select" required>
+              <option value="">Selecione</option>
+              <option value="parceria">Parceria</option>
+              <option value="orcamento">Orçamento</option>
+              <option value="duvida">Dúvida</option>
+              <option value="outro">Outro</option>
+            </select>
+            <small class="error" id="subjectError"></small>
+          </div>
+
+          <div class="field">
+            <label for="message" class="label">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              class="input textarea"
+              required
+              minlength="10"
+              placeholder="Escreva sua mensagem..."
+            ></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button class="btn" type="submit">Enviar mensagem</button>
+
+          <p id="formFeedback" class="feedback" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="card" aria-label="Informações adicionais">
+        <h2>Outras formas de contato</h2>
+        <ul class="list">
+          <li>
+            <strong>E-mail:</strong>
+            <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+          </li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              Perfil no LinkedIn
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 — LinkHub</p>
+    </footer>
+
+    <script type="module" src="./js/contato.js"></script>
+  </body>
+</html>
