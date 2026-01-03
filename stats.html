@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkHub — Estatísticas</title>
+    <meta
+      name="description"
+      content="Acompanhe estatísticas de cliques dos seus links no LinkHub."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="./index.html" class="nav__logo">LinkHub</a>
+
+        <ul class="nav__list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./perfil.html">Perfil</a></li>
+          <li><a href="./stats.html" aria-current="page">Stats</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+
+        <button id="themeToggle" class="btn btn--small" type="button">
+          Alternar tema
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <header class="page-header">
+        <h1>Estatísticas</h1>
+        <p class="muted">
+          Veja quantos cliques cada link recebeu e quando foi o último acesso.
+        </p>
+      </header>
+
+      <section class="card" aria-label="Controles de estatísticas">
+        <div class="controls">
+          <label for="sort" class="label">Ordenar por</label>
+          <select id="sort" class="input input--select">
+            <option value="clicks">Mais clicados</option>
+            <option value="recent">Mais recentes</option>
+            <option value="az">A-Z</option>
+          </select>
+
+          <button id="resetStats" class="btn btn--danger" type="button">
+            Resetar estatísticas
+          </button>
+        </div>
+
+        <p id="statusMsg" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="card" aria-label="Tabela de estatísticas">
+        <div class="table-wrap" role="region" aria-label="Tabela rolável">
+          <table class="table" id="statsTable">
+            <caption class="sr-only">
+              Tabela com links, quantidade de cliques e data do último clique.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Link</th>
+                <th scope="col">Cliques</th>
+                <th scope="col">Último clique</th>
+              </tr
