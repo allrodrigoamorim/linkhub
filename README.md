@@ -1,5 +1,10 @@
 # LinkHub 🔗
 
+## 🖼 Preview
+
+![Home](./assets/img/screens/home.png)
+![Stats](./assets/img/screens/stats.png)
+
 Um site estilo **Linktree**, feito com **HTML5 + CSS3 + JavaScript**, com interatividade, persistência no navegador (LocalStorage) e página de estatísticas.
 
 ✅ Projeto construído com boas práticas de **semântica**, **acessibilidade**, **SEO básico**, e organização profissional de arquivos.
