@@ -2,8 +2,8 @@
 
 ## 🖼 Preview
 
-![Home](./assets/img/screens/home.png)
-![Stats](./assets/img/screens/stats.png)
+![Home](./assets/img/screens/home.jpg)
+![Stats](./assets/img/screens/stats.jpg)
 
 Um site estilo **Linktree**, feito com **HTML5 + CSS3 + JavaScript**, com interatividade, persistência no navegador (LocalStorage) e página de estatísticas.
 
